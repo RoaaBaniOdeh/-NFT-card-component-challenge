@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*
+ * is a wildcard ==> It means apply those styles to all elements.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 15px;
+}
+
+#card {
+  max-width: 350px;
+  height: 550px;
+  margin: 3rem auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+#cardImageDiv {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  margin: auto;
+
+}
+
+#cardImageIcon {
+  background-position: center;
+  background-image: url(../images/icon-view.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+}
+
+#cardImageIcon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#cardTitle {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#cardTitle:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+#cardDescription {
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 20px;
+}
+
+#cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#cardPrice {
+  color: hsl(178deg, 100%, 50%);
+  display: flex;
+  gap: 10px;
+}
+
+#cardTime {
+  color: hsl(215deg, 51%, 70%);
+  gap: 10px;
+  display: flex;
+}
+
+#cardLine {
+  border-color: hsl(215deg, 51%, 70%);
+  margin: 12px;
+}
+
+#cardFooter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+#cardAuthorImage {
+  background-image: url(./images/image-avatar.png);
+  background-position: center;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+#cardAuthorName {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#cardAuthorName span {
+  color: white;
+}
+
+#cardAuthorName span:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+#attribution {
+  text-align: center;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#attribution a {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+
+}
